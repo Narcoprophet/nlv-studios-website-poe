@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- =================== SEO / META TAGS =================== -->
+  <title>Enquiry — NLV Studios</title>
+  <meta name="description" content="Submit an enquiry to NLV Studios about studio equipment, demos, bulk orders, or technical support. Our team is ready to help you." />
+  <meta name="keywords" content="NLV Studios, Enquiry, Studio Equipment, Contact, Support, Bulk Order, Demo, Technical Assistance" />
+  <meta name="author" content="NLV Studios" />
+
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <img src="../ASSETS/NLV.jpeg" alt="NLV Studios Logo" class="logo">
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <div class="nav-wrap" id="navMenu">
+      <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="shop now.html">Shop Now</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="enquiry.html" class="active">Enquiry</a></li>
+          <li><a href="accordion.html">FAQ</a></li>
+          <li id="authLink"><a href="register.html">Sign Up / Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Enquiry Form Section -->
+  <section class="form-container">
+    <h1>Enquire About Our Gear</h1>
+    <form id="enquiryForm" action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject" required>
+        <option value="">-- Select --</option>
+        <option value="demo">Request a Demo</option>
+        <option value="gear">Studio Equipment</option>
+        <option value="sponsor">Sponsorship</option>
+        <option value="bulk">Bulk Order / Wholesale</option>
+        <option value="custom">Custom Gear / Branding</option>
+        <option value="support">Technical Support</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit Enquiry</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 NLV Studios • Aqua Park, Tzaneen • info@nlvstudios.co.za
+  </footer>
+
+  <!-- JS -->
+  <script src="../JS/main.js"></script>
+  <script src="../JS/auth.js"></script>
+</body>
+</html>
