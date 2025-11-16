@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Now - NLV Studios</title>
+
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+<!-- Header / Navigation -->
+<header>
+  <img src="../ASSETS/NLV.jpeg" alt="NLV Studios Logo" class="logo" />
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <div class="nav-wrap" id="navMenu">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shopnow.html" class="active">Shop Now</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="accordion.html">FAQ</a></li>
+
+        <!-- Auth Links -->
+        <li id="authLink"><a href="register.html">Sign Up / Sign In</a></li>
+
+        <!-- User Profile (hidden by default, shown after login) -->
+        <li id="userProfile" style="display:none; align-items:center; gap:10px;">
+          <div id="profileCircle"><span id="profileInitials"></span></div>
+          <span id="profileName"></span>
+          <button id="logoutBtn">Logout</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Search Bar -->
+<div class="search-bar">
+  <input type="text" id="search" placeholder="Search products..." />
+</div>
+
+<!-- Shop Section -->
+<section class="shop-container">
+  <h1>Shop Studio Gear</h1>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="../ASSETS/Condenser Microphone.jpg" alt="Condenser Microphone">
+      <h3>Condenser Microphone</h3>
+      <p>Perfect for vocals, podcasts, and studio recording.</p>
+      <div class="price">R1,299</div>
+      <button class="add-to-cart" data-product="Condenser Microphone">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="../ASSETS/MIDI Controller.jpg" alt="MIDI Controller">
+      <h3>MIDI Controller</h3>
+      <p>Compact and powerful for beat-making and synth control.</p>
+      <div class="price">R1,899</div>
+      <button class="add-to-cart" data-product="MIDI Controller">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="../ASSETS/Studio Headphones.webp" alt="Studio Headphones">
+      <h3>Studio Headphones</h3>
+      <p>Flat response for accurate mixing and monitoring.</p>
+      <div class="price">R999</div>
+      <button class="add-to-cart" data-product="Studio Headphones">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="../ASSETS/Audio Interface.webp" alt="Audio Interface">
+      <h3>Audio Interface</h3>
+      <p>High-quality input/output for professional recording.</p>
+      <div class="price">R2,499</div>
+      <button class="add-to-cart" data-product="Audio Interface">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="close" id="lb-close">&times;</button>
+  <img id="lightbox-img" src="" alt="Large view">
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 NLV Studios • Tzaneen, Limpopo • info@nlvstudios.co.za
+</footer>
+
+<!-- JS Links Only -->
+<script src="../JS/main.js"></script>
+<script src="../JS/auth.js"></script>
+
+</body>
+</html>
